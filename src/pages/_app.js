@@ -6,16 +6,16 @@ import '../../public/css/prettyPhoto.css';
 import '../../public/css/animate.css';
 import '../../public/css/main.css';
 import '../../public/css/globals.css'
-import { Footer, Header } from '../components';
+import { Footer, Header, Bottom } from '../components';
 
 export default function App({ Component, pageProps }) {
   return (
     <Fragment>
       <Header />
-        <div className="wrapper">
-          <Component {...pageProps} />
-        </div>
+      <Component {...pageProps} />
+      <Bottom />
       <Footer />
+      
     </Fragment>
   );
 }

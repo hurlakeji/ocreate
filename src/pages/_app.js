@@ -8,7 +8,7 @@ import '../../public/css/prettyPhoto.css';
 import '../../public/css/animate.css';
 import '../../public/css/main.css';
 import '../../public/css/globals.css'
-import { Footer, Header, Bottom, AboutUs } from '../components';
+import { Footer, Header, Bottom } from '../components';
 
 export default function App({ Component, pageProps }) {
   return (

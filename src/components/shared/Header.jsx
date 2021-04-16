@@ -1,4 +1,12 @@
 import React from 'react';
+import Link from 'next/link';
+import { routes } from '../../routes';
+
+
+const websiteRoutes = [
+  { name: 'Home', route: routes.entry.path },
+  { name: 'AboutUs', route: routes.aboutUs.path },
+];
 
 export default function Header() {
   return (
@@ -15,8 +23,14 @@ export default function Header() {
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
+            {/* <li class="active"><a href="index.html">Home</a></li> */}
+            <Link href={routes.entry.path}>
+             <li class="active"><a href="index.jsx">Home</a></li>
+            </Link>
+            {/* <li><a href="about-us.html">About Us</a></li> */}
+            <Link href={routes.aboutUs.path}>
+              <li><a href="about-us.jsx">About Us</a></li>
+            </Link>
             <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li class="dropdown">

@@ -14,7 +14,9 @@ export default function App({ Component, pageProps }) {
   return (
     <Fragment>
       <Header />
-      <Component {...pageProps} />
+        <div className="wrapper">
+          <Component {...pageProps} />
+        </div>
       <Bottom />
       <Footer />
       
